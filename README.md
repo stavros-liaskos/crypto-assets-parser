@@ -1,3 +1,15 @@
+## TL;DR
+```bash
+yarn  
+yarn start
+yarn watch-css
+```
+Visit: `http://localhost:3000/`
+
+
+
+
+# Documentation
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
