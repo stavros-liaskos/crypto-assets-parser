@@ -10,7 +10,7 @@ class Market extends Component {
       let table = [];
       for (const key in data.data) {
         const el = data.data[key];
-        table.push([el.id, el.name, '$' + el.quotes.USD.price, el.quotes.USD.percent_change_24h + '%', '$' + el.quotes.USD.market_cap, el.quotes.USD.volume_24h]);
+        table.push([el.id, el.name, '$' + (el.quotes.USD.price).toLocaleString('en-GB'), el.quotes.USD.percent_change_24h + '%', '$' + (el.quotes.USD.market_cap).toLocaleString('en-GB'), (el.quotes.USD.volume_24h).toLocaleString('en-GB')]);
       }
 
       const GenerateTable = ({items}) => {
@@ -26,7 +26,17 @@ class Market extends Component {
 
   };
 
+  numberFormat(_number, _sep) {
+    _number = typeof _number !== "undefined" && _number > 0 ? _number : "";
+    _number = _number.replace(new RegExp("^(\\d{" + (_number.length % 3 ? _number.length % 3 : 0) + "})(\\d{3})", "g"), "$1 $2").replace(/(\d{3})+?/gi, "$1 ").trim();
+    if (typeof _sep !== "undefined" && _sep !== " ") {
+      _number = _number.replace(/\s/g, _sep);
+    }
+    return _number;
+  };
+
   componentDidUpdate() {
+    this.numberFormat(10000000000,)
     this.updateTable();
   };
 
