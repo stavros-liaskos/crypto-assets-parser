@@ -60,10 +60,10 @@ Chart should be interactive – when hover over the point, it should display a t
 Each point represents one coin.
 
 ### Architecture
+* Based on [create-react-app](https://github.com/facebook/create-react-app)
+* UI React-Bootstrap
+* For state management: React's `setState()`.
 
-* Your solution should be written in React. You may use [create-react-app](https://github.com/facebook/create-react-app) or similar.
-* For UI you can use any framework (Bootstrap, Semantic-UI, etc) or write your own CSS.
-* You're free to use any charts library. Think about the best fit for solving the task.
-* For state management you may use a state-management library such as `Redux` or use React's `setState()`.
-* Make sure it works in latest Chrome, Safari or Firefox
-* Webpage should be responsive.
+### Requirements
+* Works in latest Chrome, Safari or Firefox
+* Webpage is responsive

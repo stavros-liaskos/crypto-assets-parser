@@ -24,11 +24,11 @@ class Header extends Component {
                 Liquidity
               </NavItem>
 
-              <NavDropdown eventKey={3} title="Coins" id="basic-nav-dropdown">
+              <NavDropdown eventKey={3} title="Coins" id="basic-nav-dropdown" onSelect={this.props.updateCoins}>
                 <MenuItem eventKey={3.1}>10</MenuItem>
                 <MenuItem eventKey={3.2}>50</MenuItem>
                 <MenuItem eventKey={3.3}>100</MenuItem>
-                <MenuItem eventKey={3.3}>All</MenuItem>
+                <MenuItem eventKey={3.4}>All</MenuItem>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
