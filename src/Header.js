@@ -17,10 +17,10 @@ class Header extends Component {
 
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="#">
+              <NavItem eventKey={1} href="/">
                 Market overview
               </NavItem>
-              <NavItem eventKey={2} href="#liquidity">
+              <NavItem eventKey={2} href="/liquidity">
                 Liquidity
               </NavItem>
 

@@ -6,10 +6,13 @@ yarn watch-css
 ```
 Visit: `http://localhost:3000/`
 
+> TODO: 
+> 1. 'all' select
+> 2. /liquitidy
 
 
 
-# Documentation
+# Documentation from Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
